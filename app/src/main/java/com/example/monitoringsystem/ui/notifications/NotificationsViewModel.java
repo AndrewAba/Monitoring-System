@@ -1,4 +1,4 @@
-package com.example.monitoringsystem.ui.slideshow;
+package com.example.monitoringsystem.ui.notifications;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
