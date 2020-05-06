@@ -5,4 +5,6 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="darkBlue">#243A56</color>
     <color name="statusBar">#8190A5</color>
+    <color name="tabLayoutColor">#446284</color>
+    <color name="LightGrey">#D3D3D3</color>
 </resources>
