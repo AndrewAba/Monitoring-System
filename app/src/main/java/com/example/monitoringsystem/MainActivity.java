@@ -1,13 +1,5 @@
 package com.example.monitoringsystem;
 
-<<<<<<< HEAD
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-
-public class MainActivity extends AppCompatActivity {
-
-=======
 import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
@@ -33,13 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @SuppressLint("ResourceAsColor")
->>>>>>> 5f402837b8a2e7a3072f8f0fb1e95fb5cf498287
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
-=======
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -76,6 +65,5 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
->>>>>>> 5f402837b8a2e7a3072f8f0fb1e95fb5cf498287
     }
 }

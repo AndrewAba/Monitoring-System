@@ -1,7 +1,4 @@
 <resources>
-<<<<<<< HEAD
-    <string name="app_name">Monitoring System</string>
-=======
     <string name="app_name">MonitoringSystem</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -24,5 +21,4 @@
     <string name="str_co2">CO2</string>
     <string name="str_humidity">Humidity</string>
     <string name="str_temperature">Temperature</string>
->>>>>>> 5f402837b8a2e7a3072f8f0fb1e95fb5cf498287
 </resources>
