@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 rootProject.name='Monitoring System'
+=======
+rootProject.name='MonitoringSystem'
+>>>>>>> 5f402837b8a2e7a3072f8f0fb1e95fb5cf498287
 include ':app'

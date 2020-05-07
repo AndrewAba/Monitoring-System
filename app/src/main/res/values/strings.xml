@@ -1,3 +1,28 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Monitoring System</string>
+=======
+    <string name="app_name">MonitoringSystem</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Admin</string>
+    <string name="nav_header_subtitle">Factory Manager</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="settings">Settings</string>
+    <string name="string_notifications">Notifications</string>
+    <string name="string_signOut">Sign out</string>
+    <string name="tab_co2">CO2</string>
+    <string name="tab_humidity">Humidity</string>
+    <string name="tab_temperature">Temperature</string>
+    <string name="str_co2">CO2</string>
+    <string name="str_humidity">Humidity</string>
+    <string name="str_temperature">Temperature</string>
+>>>>>>> 5f402837b8a2e7a3072f8f0fb1e95fb5cf498287
 </resources>
