@@ -26,4 +26,11 @@
     <string name="log_in">Log In</string>
     <string name="sign_up">Sign Up</string>
     <string name="e_mail_address">E-mail address</string>
+    <string name="tab_co2">CO2</string>
+    <string name="tab_humidity">Humidity</string>
+    <string name="tab_temperature">Temperature</string>
+    <string name="str_co2">CO2</string>
+    <string name="str_humidity">Humidity</string>
+    <string name="str_temperature">Temperature</string>
+
 </resources>

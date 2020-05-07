@@ -1,4 +1,4 @@
-package com.example.monitoringsystem.ui.slideshow;
+package com.example.monitoringsystem.ui.notifications;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
