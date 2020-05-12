@@ -12,5 +12,13 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 public class ComputedValues {
-    //how to represent
+    private double co2_min;
+    private double co2_max;
+    private double co2_default;
+    private double humidity_min;
+    private double humidity_max;
+    private double humidity_default;
+    private double temperature_min;
+    private double temperature_max;
+    private double temperature_default;
 }

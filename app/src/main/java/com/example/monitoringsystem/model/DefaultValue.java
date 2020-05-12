@@ -12,6 +12,5 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 public class DefaultValue {
-    private int parameter;
-    private int value;
+    private Parameters parameters;
 }
