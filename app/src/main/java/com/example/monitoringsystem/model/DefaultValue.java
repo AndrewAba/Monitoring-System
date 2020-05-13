@@ -13,4 +13,5 @@ import lombok.ToString;
 @ToString
 public class DefaultValue {
     private Parameters parameters;
+    private int value;
 }

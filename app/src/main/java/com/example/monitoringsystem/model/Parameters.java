@@ -14,8 +14,8 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 public class Parameters {
-    private double co2;
-    private double humidity;
-    private double temperature; // TODO ask database
+    private String sensorName;
+    private String unitType;
+    private double value;
     private Date date;
 }
