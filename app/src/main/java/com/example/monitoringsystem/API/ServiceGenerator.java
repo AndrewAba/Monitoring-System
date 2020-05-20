@@ -5,7 +5,7 @@ import retrofit.Retrofit;
 
 public class ServiceGenerator {
     private static Retrofit.Builder retrofitBuilder = new Retrofit.Builder()
-            .baseUrl("base url")
+            .baseUrl("insert local host")
             .addConverterFactory(GsonConverterFactory.create());
 
     private static Retrofit retrofit = retrofitBuilder.build();
