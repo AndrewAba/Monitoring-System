@@ -1,5 +1,7 @@
 package com.example.monitoringsystem.model;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.Date;
 
 import lombok.AllArgsConstructor;
@@ -14,8 +16,16 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 public class Parameters {
+    @SerializedName("sensorName")
     private String sensorName;
+    @SerializedName("unitType")
     private String unitType;
+    @SerializedName("value")
     private double value;
-    private Date date;
+    @SerializedName("timestamp")
+    private long timestamp;
+
+    public double getValue(){
+        return value;
+    }
 }

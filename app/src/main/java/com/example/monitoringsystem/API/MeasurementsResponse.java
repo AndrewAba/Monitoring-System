@@ -1,13 +1,12 @@
 package com.example.monitoringsystem.API;
-
 import com.example.monitoringsystem.model.Parameters;
-
-import java.util.ArrayList;
+import java.util.List;
 
 public class MeasurementsResponse {
-    private ArrayList<Parameters> measures;
+    private List<Parameters> measures;
 
-    public ArrayList<Parameters> getMeasures() {
+    public List<Parameters> getMeasures() {
+
         return measures;
     }
 }

@@ -1,18 +1,44 @@
 package com.example.monitoringsystem.API;
 
-import retrofit.GsonConverterFactory;
-import retrofit.Retrofit;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import okhttp3.logging.HttpLoggingInterceptor;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 
 public class ServiceGenerator {
-    private static Retrofit.Builder retrofitBuilder = new Retrofit.Builder()
-            .baseUrl("insert local host")
-            .addConverterFactory(GsonConverterFactory.create());
 
-    private static Retrofit retrofit = retrofitBuilder.build();
 
-    private static Api api = retrofit.create(Api.class);
+    private static final String TAG = "ServiceGenerator";
 
-    public static Api getApi() {
-        return api;
+    private static final String BASE_URL = "http://localhost:8080";
+    private static ServiceGenerator instance;
+    private Retrofit retrofit;
+
+    public static ServiceGenerator getInstance() {
+        if (instance == null) {
+            instance = new ServiceGenerator();
+        }
+        return instance;
+    }
+
+    private ServiceGenerator() {
+        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
+        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+
+        Gson gson = new GsonBuilder()
+                .create();
+
+        retrofit = new Retrofit.Builder()
+                .baseUrl(BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create(gson))
+                .build();
+    }
+
+    public Retrofit getRetrofitClient() {
+        return retrofit;
     }
 }
