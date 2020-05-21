@@ -1,30 +1,60 @@
 package com.example.monitoringsystem.ui.humidity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.monitoringsystem.R;
-import com.example.monitoringsystem.ui.co2.CO2ViewModel;
 
 public class HumidityFragment extends Fragment {
 
+    private static final String TAG = "API RESPONSE:";
+    private TextView temp;
+    private Button button;
     private HumidityViewModel humidityViewModel;
+    private String data;
+
 
     public static HumidityFragment newInstance() {
         return new HumidityFragment();
     }
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        humidityViewModel = new ViewModelProvider(this).get(HumidityViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_tab_humidity, container, false);
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-        return root;
+
+        humidityViewModel = new ViewModelProvider(this).get(HumidityViewModel.class);
+
+
+        humidityViewModel.init();
+
+        humidityViewModel.getData().observe(this, data -> {
+
+            this.data = data.toString();
+            System.out.printf(this.data);
+            Log.d(TAG,this.data);
+            temp.setText(data.toString());
+
+        });
+
+
     }
+
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_tab_temperature, container, false);
+
+        temp = (TextView) view.findViewById(R.id.dataTextView);
+        return view;
+    }
+
 }
