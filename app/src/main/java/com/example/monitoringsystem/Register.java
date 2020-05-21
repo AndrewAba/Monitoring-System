@@ -32,7 +32,7 @@ public class Register extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_login);
 
         username = findViewById(R.id.editText);
         password = findViewById(R.id.editText2);
@@ -92,7 +92,6 @@ public class Register extends AppCompatActivity {
                        else
                        {
                            Toast.makeText(Register.this, "Error!" + Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
-                           pBar.setVisibility(View.GONE);
                        }
                    }
                });
